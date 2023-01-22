@@ -1,4 +1,4 @@
-"""from helper import validate_and_execute, user_input_message
+from helper import validate_and_execute, user_input_message
 user_input = ""
 while user_input != "exit" :
     user_input=input(user_input_message)
@@ -7,7 +7,4 @@ while user_input != "exit" :
     days_and_units_dictionary = {"days":days_and_units[0], "units": days_and_units[1]}
     print(days_and_units_dictionary)
     print(type(days_and_units_dictionary))
-    validate_and_execute(days_and_units_dictionary)"""
-import logging
-logger=logging.getLogger("MAIN")
-logger.error('error happened in the app')
+    validate_and_execute(days_and_units_dictionary)
