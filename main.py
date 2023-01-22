@@ -1,24 +1,13 @@
-calculation_to_units = 24
-name_of_unit = "hours"
-
-def days_to_units(num_of_days):
-    return f"{num_of_days} days are {num_of_days * calculation_to_units} {name_of_unit}"
-
-
-def validate_and_execute():
-    try:
-        user_input_number = int(user_input)
-
-        # we want to do conversion only for positive integers
-        if user_input_number > 0:
-            calculated_value = days_to_units(user_input_number)
-            print(calculated_value)
-        elif user_input_number == 0:
-            print("you entered a 0, please enter a valid positive number")
-        else:
-            print("you entered a negative number, no conversion for you!")
-    except ValueError:
-        print("your input is not a valid number. Don't ruin my program!")
-
-user_input=input("Hey user, enter a number of days, I will convert it to hours \n ")
-validate_and_execute()
+"""from helper import validate_and_execute, user_input_message
+user_input = ""
+while user_input != "exit" :
+    user_input=input(user_input_message)
+    days_and_units =user_input.split(":")
+    print(days_and_units)
+    days_and_units_dictionary = {"days":days_and_units[0], "units": days_and_units[1]}
+    print(days_and_units_dictionary)
+    print(type(days_and_units_dictionary))
+    validate_and_execute(days_and_units_dictionary)"""
+import logging
+logger=logging.getLogger("MAIN")
+logger.error('error happened in the app')
